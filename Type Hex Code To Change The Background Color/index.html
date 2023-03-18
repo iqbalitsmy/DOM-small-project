@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>Generate A Dynamic Toast Message</title>
+</head>
+
+<body>
+    <div class="container" id="root">
+        <h1>
+            Change The Background Color By Clicking The Following Button.
+        </h1>
+        <div class="label-group">
+            <label for="output">HEX Code</label>
+        </div>
+        <div class="input-group">
+            <div class="input-icon">#</div>
+            <input class="output" type="text" value="000000" id="output" />
+            <button class="copy-btn" id="copy-btn" title="Copy to clipboard">
+                Copy
+            </button>
+        </div>
+        <div class="label-group">
+            <label for="output">RGB Code</label>
+        </div>
+        <div class="input-group">
+            <input class="output" type="text" value="RGB(0,0,0)" id="output2" disabled />
+            <button class="copy-btn" id="copy-btn2" title="Copy to clipboard">
+                Copy
+            </button>
+        </div>
+        <button class="change-btn" id="change-btn">Change color</button>
+    </div>
+</body>
+
+</html>
