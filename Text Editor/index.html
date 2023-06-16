@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/3273c59d8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="p-4 text-center">
+        <div class="bg-sky-300 w-4/5 mx-auto pb-5">
+            <h1 class="text-5xl font-semibold p-5">My Text Editor</h1>
+            <div class="border-black border-2 mx-24 bg-sky-200 p-4">
+                <div class="flex justify-between">
+                    <div class="p-4">
+                        <button id="font-style-italic" class="px-1"><i class="fa-solid fa-italic"></i></button>
+                        <button id="font-style-bold" class="px-1"><i class="fa-solid fa-bold"></i></button>
+                        <button id="font-style-underline" class="px-1"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <div class="p-4">
+                        <button id="text-align-left" class="px-1"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="text-align-center" class="px-1"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="text-align-right" class="px-1"><i class="fa-solid fa-align-right"></i></button>
+                    </div>
+                    <div class="flex p-4">
+                        <input id="font-size" class="w-8" type="number">
+                        <h4 class="mr-3">aA</h4>
+                        <input id="text-color" class="" type="color">
+                    </div>
+                </div>
+                <hr class="border-black border-2">
+                <div class="m-3">
+                    <textarea class="w-full h-[400px] p-2" name="" id="text-field" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Js Script -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
